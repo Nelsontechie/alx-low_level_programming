@@ -1,9 +1,9 @@
 #include "main.h"
-#include <unistd.h>
+#include "_putchar.c"
 /**
  * leet - the function
- * @str: variable
- * Return: rerturn value
+ * @str: string
+ * Return: returns string
  */
 
 char *leet(char *str)
