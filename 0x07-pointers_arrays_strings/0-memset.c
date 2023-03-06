@@ -3,7 +3,7 @@
  * _memset - the main function
  * @b: variable 1
  * @s: variable 2
- * @int: integer
+ * @n: integer
  * Return: return value
  */
 
