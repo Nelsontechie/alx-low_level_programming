@@ -1,1 +1,1 @@
-C program
+STATIC LIBRARIES
