@@ -1,4 +1,8 @@
 #include "main.h"
+/**
+ * main - the main function
+ * Return: the freturn value
+ */
 
 int main(void)
 {
