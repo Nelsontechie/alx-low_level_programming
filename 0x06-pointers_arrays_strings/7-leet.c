@@ -6,23 +6,27 @@
  * Return: returns string
  */
 
-char *leet(char *str)
+char leet(char *str)
 {
 	char *p = str;
-	char map[128] = {0};
+	char leet_chars[] = {'4', '3', '0', '7', '1'};
+	char regular_chars[] = {'a', 'e', 'o', 't', 'l'};
+	int i, j;
 
-	map['a'] = map['A'] = '4';
-	map['e'] = map['E'] = '3';
-	map['o'] = map['O'] = '0';
-	map['t'] = map['T'] = '7';
-	map['l'] = map['L'] = '1';
-
-	while (*p)
-
+	while (*p != '\0')
 	{
-		char c = map[(int)*p];
-
-		_putchar(c ? c : *p);
+		i = 0;
+		while (i < 5)
+		{
+			if (*p == regular_chars[i] ||
+			  *p == regular_chars[i] - 'a' + 'A')
+			{
+				j = i;
+				*p = leet_chars[j];
+				break;
+			}
+			i++;
+		}
 		p++;
 	}
 	return (str);

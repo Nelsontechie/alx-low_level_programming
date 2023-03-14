@@ -1,1 +1,1 @@
-strings and arrays
+POINTERS
